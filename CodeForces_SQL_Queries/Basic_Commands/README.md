@@ -1,1 +1,16 @@
+# Basic Commands
+
+This file has all the problems from the Basic Commands section of CodeForces SQL Practice Queries.
+
+### [All Products](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP11)
+
+```sql
+SELECT * 
+FROM Products;
+```
+## Thought Process
+- Goal: Retrieve all the details from the `Products` table.  
+- Step 1: Use the `SELECT *` command to fetch every column from the table.  
+- Step 2: Specify the table name `Products` using the `FROM` clause.  
+📌 This query returns the complete dataset from the `Products` table, displaying every product and its associated information.
 
