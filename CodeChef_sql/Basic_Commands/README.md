@@ -25,3 +25,13 @@ WHERE price > 100.00;
 - Step 2: Apply the `WHERE` clause to filter only those products whose `price` is greater than 100.00.  
 📌 This query displays the names and categories of all products priced above 100.
 
+### [Average Salary](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP14)
+
+```sql
+SELECT AVG(salary) AS avg_salary 
+FROM Works;
+```
+## Thought Process
+- Step 1: Use the `AVG()` function to calculate the average of the `salary` column from the `Works` table.  
+- Step 2: Assign the result an alias `avg_salary` for better readability.  
+📌 This query returns the average salary of all employees in the `Works` table.
