@@ -58,3 +58,15 @@ FROM Works;
 - Step 1: Use the `DISTINCT` keyword to eliminate duplicate values from the `company_name` column.  
 - Step 2: Retrieve unique company names from the `Works` table.  
 📌 This query returns a list of all distinct company names where employees work.
+
+### [Fiction Collection Size](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP02)
+
+```sql
+SELECT COUNT(*) AS fiction_count 
+FROM Books
+WHERE genre = 'Fiction';
+```
+## Thought Process
+- Step 1: Use the `COUNT(*)` function to count the total number of records in the `Books` table.  
+- Step 2: Apply the `WHERE` clause to include only those rows where the `genre` is `'Fiction'`.  
+📌 This query returns the total number of books that belong to the Fiction genre.
