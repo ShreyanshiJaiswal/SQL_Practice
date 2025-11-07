@@ -70,3 +70,15 @@ WHERE genre = 'Fiction';
 - Step 1: Use the `COUNT(*)` function to count the total number of records in the `Books` table.  
 - Step 2: Apply the `WHERE` clause to include only those rows where the `genre` is `'Fiction'`.  
 📌 This query returns the total number of books that belong to the Fiction genre.
+
+### [List of Movies with Ratings](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP01)
+
+```sql
+SELECT Movie_name 
+FROM Cinema
+WHERE Rating > 7 AND Rating < 9;
+```
+## Thought Process
+- Step 1: Use the `SELECT` statement to retrieve the `Movie_name` column from the `Cinema` table.  
+- Step 2: Apply the `WHERE` clause to filter movies with ratings greater than 7 and less than 9.  
+📌 This query displays the names of movies whose ratings fall between 7 and 9.
