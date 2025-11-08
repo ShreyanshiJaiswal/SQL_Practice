@@ -82,3 +82,15 @@ WHERE Rating > 7 AND Rating < 9;
 - Step 1: Use the `SELECT` statement to retrieve the `Movie_name` column from the `Cinema` table.  
 - Step 2: Apply the `WHERE` clause to filter movies with ratings greater than 7 and less than 9.  
 📌 This query displays the names of movies whose ratings fall between 7 and 9.
+
+### [Handling NULL Values](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP07)
+
+```sql
+SELECT book_id, title, author, published_year 
+FROM Library
+WHERE rating IS NULL;
+```
+## Thought Process
+- Step 1: Use the `SELECT` statement to retrieve `book_id`, `title`, `author`, and `published_year` columns from the `Library` table.  
+- Step 2: Apply the `WHERE` clause with the condition `rating IS NULL` to filter books that have no rating.  
+📌 This query returns the details of all books in the library that do not have a rating value.
