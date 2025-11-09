@@ -94,3 +94,17 @@ WHERE rating IS NULL;
 - Step 1: Use the `SELECT` statement to retrieve `book_id`, `title`, `author`, and `published_year` columns from the `Library` table.  
 - Step 2: Apply the `WHERE` clause with the condition `rating IS NULL` to filter books that have no rating.  
 📌 This query returns the details of all books in the library that do not have a rating value.
+
+### [Salary of Employees](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP08)
+
+```sql
+SELECT employee_name, company, salary 
+FROM Employees
+WHERE category = 'Full-Time'
+ORDER BY salary DESC;
+```
+## Thought Process
+- Step 1: Use the `SELECT` statement to fetch `employee_name`, `company`, and `salary` columns from the `Employees` table.  
+- Step 2: Apply the `WHERE` clause to filter only those employees whose `category` is `'Full-Time'`.  
+- Step 3: Use the `ORDER BY` clause with `salary DESC` to sort the results in descending order of salary.  
+📌 This query lists all full-time employees along with their company names and salaries, arranged from highest to lowest salary.
