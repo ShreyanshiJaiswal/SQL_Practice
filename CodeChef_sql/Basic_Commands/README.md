@@ -108,3 +108,16 @@ ORDER BY salary DESC;
 - Step 2: Apply the `WHERE` clause to filter only those employees whose `category` is `'Full-Time'`.  
 - Step 3: Use the `ORDER BY` clause with `salary DESC` to sort the results in descending order of salary.  
 📌 This query lists all full-time employees along with their company names and salaries, arranged from highest to lowest salary.
+
+### [Department of Each Employee](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP09?tab=statement)
+
+```sql
+SELECT department, COUNT(*) AS total_employees 
+FROM Employees
+GROUP BY department;
+```
+## Thought Process
+- Step 1: Use the `SELECT` statement to retrieve the `department` column from the `Employees` table.  
+- Step 2: Apply the `COUNT(*)` function to count the number of employees in each department.  
+- Step 3: Use the `GROUP BY` clause on `department` to group records by department name.  
+📌 This query shows the total number of employees working in each department.
