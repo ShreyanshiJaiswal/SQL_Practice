@@ -135,3 +135,19 @@ ORDER BY author_id ASC;
 - Step 2: Apply the `WHERE` clause with the condition `view_count = 0` to filter authors whose articles have zero views.  
 - Step 3: Use `ORDER BY author_id ASC` to sort the results by author ID in ascending order.  
 📌 This query returns the list of authors and their publications that have not received any views yet.
+
+### [Player Performance Insights](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP04?tab=statement)
+
+```sql
+SELECT DISTINCT p.player_name, p.score 
+FROM Players p
+JOIN Matches m ON m.winner = p.player_name
+ORDER BY p.score DESC
+LIMIT 3;
+```
+## Thought Process
+- Step 1: Use the `JOIN` clause to combine the `Players` table (`p`) with the `Matches` table (`m`) based on the condition `m.winner = p.player_name`.  
+- Step 2: Use `DISTINCT` to avoid duplicate player entries.  
+- Step 3: Retrieve the `player_name` and `score` columns of players who have won matches.  
+- Step 4: Order the results by `score` in descending order and use `LIMIT 3` to get the top three players.  
+📌 This query displays the top 3 highest-scoring players who have won at least one match.
