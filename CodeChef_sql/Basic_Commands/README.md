@@ -151,3 +151,19 @@ LIMIT 3;
 - Step 3: Retrieve the `player_name` and `score` columns of players who have won matches.  
 - Step 4: Order the results by `score` in descending order and use `LIMIT 3` to get the top three players.  
 📌 This query displays the top 3 highest-scoring players who have won at least one match.
+
+### [Player Details](https://www.codechef.com/practice/course/sql-case-studies-topic-wise/SQLBP01/problems/SQLPBP05?tab=statement)
+
+```sql
+SELECT m.match_id, m.player_1, m.player_2, m.winner, m.match_date, p.score
+FROM Matches m
+JOIN Players p ON m.winner = p.player_name
+ORDER BY m.match_date DESC
+LIMIT 5;
+```
+## Thought Process
+- Step 1: Use the `JOIN` clause to combine the `Matches` table (`m`) with the `Players` table (`p`) based on the condition `m.winner = p.player_name`.  
+- Step 2: Select relevant columns from both tables — `match_id`, `player_1`, `player_2`, `winner`, `match_date`, and `score`.  
+- Step 3: Use `ORDER BY m.match_date DESC` to display the most recent matches first.  
+- Step 4: Apply `LIMIT 5` to fetch only the latest five match records.  
+📌 This query returns details of the five most recent matches along with the winner’s score.
