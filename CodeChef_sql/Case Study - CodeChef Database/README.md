@@ -21,7 +21,13 @@ Most of the problems in this group were **MCQ-based SQL questions**, where the t
 - Evaluating GROUP BY results mentally  
 - Predicting nested aggregate outputs  
 
-Because these were multiple-choice questions, the platform often **did not provide full schema details** or **complete datasets**, making it difficult to document them like typical SQL coding problems.
+Because these were multiple-choice questions, the platform often **had full schema details** or **complete datasets**, but the dataset & tables were available and the **actual question and answer options were in a separate tab**, requiring:
+
+- Switching between the data tab and question tab  
+- Interpreting the query mentally  
+- Matching the answer from the multiple choices  
+
+Because these were not traditional “write-the-query” exercises, documenting them in a typical SQL format for GitHub was less straightforward and more time-consuming.  
 
 This also made it challenging to maintain GitHub uploads consistently, since MCQ-style SQL problems do not always translate into standalone SQL files or reproducible examples.
 
