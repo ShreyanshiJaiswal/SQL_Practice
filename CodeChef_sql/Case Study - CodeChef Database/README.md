@@ -21,7 +21,7 @@ Most of the problems in this group were **MCQ-based SQL questions**, where the t
 - Evaluating GROUP BY results mentally  
 - Predicting nested aggregate outputs  
 
-Because these were multiple-choice questions, the platform often **had full schema details** or **complete datasets**, but the dataset & tables were available and the **actual question and answer options were in a separate tab**, requiring:
+Because these were multiple-choice questions, the platform often **had full schema details** or **complete datasets**, but the dataset  or tables  and the **actual question and answer options were in a separate tab**, requiring:
 
 - Switching between the data tab and question tab  
 - Interpreting the query mentally  
